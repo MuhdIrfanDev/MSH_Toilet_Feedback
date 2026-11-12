@@ -143,9 +143,9 @@ const CONFIG = {
   // Google Form "formResponse" URL (see setup notes)
   FORM_URL: "https://docs.google.com/forms/d/e/1FAIpQLSea0CJts_kFSEZ0bne0nLLGzizjLQOGNq1kYTDOdoPQDuk-qw/formResponse",
   // Google Form field IDs (entry.XXXXXXXXXX)
-  ENTRY_LOCATION: "entry.1111111111",
-  ENTRY_RATING:   "entry.2222222222",
-  ENTRY_ISSUES:   "entry.3333333333",
+  ENTRY_LOCATION: "entry.2112153671",
+  ENTRY_RATING:   "entry.1265919894",
+  ENTRY_ISSUES:   "entry.1600273334",
   DEFAULT_LOCATION: "3RD Floor Male Toilet",
   COOLDOWN_SECONDS: 30,       // stops repeat/spam submissions from the same device
   REQUIRE_ISSUE_IF_NOT_GOOD: false // true = Neutral/Poor must pick at least one issue
