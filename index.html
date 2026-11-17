@@ -83,6 +83,11 @@
   .thanks .big { font-size: 80px; }
   .thanks h3 { font-size: 28px; margin: 10px 0 6px; }
   .thanks p { color: #444; margin: 0; }
+
+  .thanks .count { margin-top: 14px; font-size: 18px; }
+  .thanks .count b { color: var(--blue); font-size: 26px; }
+  .thanks a { color: var(--blue); font-weight: 700; }
+  
   .toast { color:#b00020; text-align:center; margin-top:10px; min-height:20px; font-size:14px; }
 </style>
 </head>
@@ -136,6 +141,8 @@
   <div class="big">🙏</div>
   <h3>Thank you for your feedback!</h3>
   <p>Your response helps us keep this toilet clean.</p>
+  <p class="count">Redirecting in <b id="count">5</b> seconds…</p>
+  <p><a href="https://www.hospitalmetro.com/index.php">Go now</a></p>
 </div>
 
 <script>
@@ -259,15 +266,23 @@ submitBtn.onclick = async () => {
 };
 
 function showThanks() {
+  const REDIRECT_URL = "https://www.hospitalmetro.com/index.php";
+  const SECONDS = 5;
+
   document.getElementById("thanks").classList.add("show");
-  setTimeout(() => {
-    document.getElementById("thanks").classList.remove("show");
-    rating = null; selected.clear();
-    document.querySelectorAll(".tile").forEach(t => t.classList.remove("selected"));
-    document.querySelectorAll(".face").forEach(f => f.classList.remove("active", "dim"));
-    submitBtn.textContent = "SUBMIT";
-    refresh();
-  }, 3000);
+
+  let left = SECONDS;
+  const countEl = document.getElementById("count");
+  countEl.textContent = left;
+
+  const timer = setInterval(() => {
+    left--;
+    countEl.textContent = left;
+    if (left <= 0) {
+      clearInterval(timer);
+      window.location.href = REDIRECT_URL;
+    }
+  }, 1000);
 }
 </script>
 </body>
