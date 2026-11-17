@@ -152,18 +152,29 @@ const CONFIG = {
 };
 
 const ISSUES = [
-  { label: "Wet/Dirty Floor",         ico: "⚠️" },
-  { label: "Dirty Mirror",            ico: "🪞" },
-  { label: "No Hand Towel",           ico: "🧻" },
-  { label: "Dirty/Choke Basin",       ico: "🚰" },
-  { label: "Dirty Toilet Bowl/Urinal",ico: "🚽" },
-  { label: "Faulty Hand Dryer",       ico: "💨" },
-  { label: "Litter Bin Full",         ico: "🗑️" },
-  { label: "No Hand Soap",            ico: "🧴" },
-  { label: "Faulty/Blinking Light",   ico: "💡" },
-  { label: "No Toilet Paper",         ico: "🧷" },
-  { label: "Faulty Tap/Flush",        ico: "🚿" },
-  { label: "Bad Smell",               ico: "👃" }
+  { label: "Wet/Dirty Floor", ico: `<svg viewBox="0 0 64 64"><line x1="46" y1="4" x2="32" y2="40" stroke="#8a5a2b" stroke-width="4" stroke-linecap="round"/><path d="M19 40h24l4 14H15z" fill="#f2c94c" stroke="#b8860b" stroke-width="2" stroke-linejoin="round"/><path d="M22 54v4M28 54v4M34 54v4M40 54v4" stroke="#b8860b" stroke-width="2.5" stroke-linecap="round"/><ellipse cx="32" cy="61" rx="27" ry="2.5" fill="#7ec8f2"/></svg>` },
+
+  { label: "Dirty Mirror", ico: "🪞" },
+
+  { label: "No Hand Towel", ico: `<svg viewBox="0 0 64 64"><rect x="10" y="6" width="44" height="30" rx="5" fill="#cfd8e3" stroke="#5b6b7d" stroke-width="2.5"/><rect x="24" y="14" width="16" height="6" rx="3" fill="#fff" stroke="#5b6b7d" stroke-width="2"/><rect x="16" y="33" width="32" height="4" fill="#5b6b7d"/><path d="M20 37h24v20l-4-3-4 3-4-3-4 3-4-3-4 3z" fill="#fff" stroke="#5b6b7d" stroke-width="2" stroke-linejoin="round"/></svg>` },
+
+  { label: "Dirty/Choke Basin", ico: "🚰" },
+
+  { label: "Dirty Toilet Bowl/Urinal", ico: "🚽" },
+
+  { label: "Faulty Hand Dryer", ico: `<svg viewBox="0 0 64 64"><rect x="8" y="4" width="48" height="16" rx="6" fill="#8fd0f0" stroke="#2f7fa8" stroke-width="2.5"/><rect x="16" y="18" width="32" height="4" rx="2" fill="#2f7fa8"/><path d="M22 26q-3 3 0 6t0 6M32 26q-3 3 0 6t0 6M42 26q-3 3 0 6t0 6" stroke="#2f7fa8" stroke-width="2.5" fill="none" stroke-linecap="round"/><g fill="#f4c7a1" stroke="#c98f63" stroke-width="1.8"><rect x="15" y="43" width="6" height="14" rx="3"/><rect x="22" y="41" width="6" height="16" rx="3"/><rect x="29" y="41" width="6" height="16" rx="3"/><rect x="36" y="43" width="6" height="14" rx="3"/><rect x="13" y="52" width="32" height="9" rx="4"/></g></svg>` },
+
+  { label: "Litter Bin Full", ico: "🗑️" },
+
+  { label: "No Hand Soap", ico: "🧴" },
+
+  { label: "Faulty/Blinking Light", ico: "💡" },
+
+  { label: "No Toilet Paper", ico: "🧻" },
+
+  { label: "Faulty Tap/Flush", ico: `<svg viewBox="0 0 64 64"><rect x="17.5" y="2" width="7" height="14" rx="3.5" fill="#f4c7a1" stroke="#c98f63" stroke-width="1.8"/><rect x="14" y="17" width="14" height="5" rx="2" fill="#2f7fa8"/><rect x="8" y="22" width="26" height="16" rx="3" fill="#e9eef3" stroke="#5b6b7d" stroke-width="2.5"/><path d="M6 38h46q0 16-16 16H22Q6 54 6 38z" fill="#fff" stroke="#5b6b7d" stroke-width="2.5" stroke-linejoin="round"/><rect x="20" y="54" width="18" height="6" rx="2" fill="#cfd8e3" stroke="#5b6b7d" stroke-width="2"/></svg>` },
+
+  { label: "Bad Smell", ico: "👃" }
 ];
 
 /* ================= LOGIC ================= */
