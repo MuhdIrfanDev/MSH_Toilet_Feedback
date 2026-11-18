@@ -209,7 +209,7 @@ ISSUES.forEach(i => {
   const b = document.createElement("button");
   b.className = "tile";
   b.type = "button";
-  b.innerHTML = `<span class="ico">${i.ico}<br></span><span>${i.label}</span>`;
+  b.innerHTML = `<span class="ico">${i.ico}</span><span>${i.label}</span>`;
   b.onclick = () => {
     selected.has(i.label) ? selected.delete(i.label) : selected.add(i.label);
     b.classList.toggle("selected");
