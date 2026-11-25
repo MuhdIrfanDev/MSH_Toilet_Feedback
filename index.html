@@ -20,7 +20,11 @@
     background: linear-gradient(#ffffff 0%, #c5dcf3 100%) fixed;
     padding-bottom: 24px;
   }
-  .location { text-align: center; font-size: 15px; padding: 8px 0 4px; }
+  .location {
+    text-align: center; font-size: clamp(20px, 5.5vw, 30px); font-weight: 700; color: var(--blue);
+    padding: 14px 0 10px; letter-spacing: .5px;
+  }
+  
   .wrap { max-width: 720px; margin: 0 auto; padding: 0 12px; }
 
   /* Rating card */
@@ -35,8 +39,7 @@
   }
   .head h1 { font-size: clamp(20px, 5vw, 34px); margin: 0; text-align: center; flex: 1; }
   .head::after { content: ""; width: 64px; flex-shrink: 0; }
-  .logo { width: 64px; height: 64px; display:flex; align-items:center; justify-content:center;
-          font-weight:700; color: var(--blue); border:2px solid var(--blue); border-radius:10px; font-size:12px; text-align:center; }
+  .logo { width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; }
   .logo img { max-width: 100%; max-height: 100%; }
 
   .faces { display: flex; justify-content: space-around; margin-top: 14px; }
